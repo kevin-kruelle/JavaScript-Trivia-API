@@ -1,0 +1,20 @@
+[{"id":113687,
+    "answer":"the Federal Emergency Management Agency",
+    "question":"Helping communities to recover after a disaster, FEMA is this agency",
+    "value":600,
+    "airdate":"2011-11-28T12:00:00.000Z",
+    "created_at":"2014-02-14T02:43:30.770Z",
+    "updated_at":"2014-02-14T02:43:30.770Z",
+    "category_id":15478,
+    "game_id":null,
+    "invalid_count":null,
+    "category":
+        {
+        "id":15478,
+        "title":"gov. abbrev.",
+        "created_at":"2014-02-14T02:43:30.085Z",
+        "updated_at":"2014-02-14T02:43:30.085Z",
+        "clues_count":10
+    }
+        
+}]
