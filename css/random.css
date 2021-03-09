@@ -19,14 +19,16 @@ body {
 
   #answer {
     display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
   }
 
 #demo, #answer{
     color: #fcf7ff;
     font-size: 1.5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    margin-top: 100px;
     margin-bottom: 50px;
+    min-height: 75px;
 
 }
 
@@ -38,9 +40,14 @@ body {
     padding: 20px;
     margin-top: 40px;
     min-height: 500px;
+    background-image: url('../rose.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    
 }
 
-#btnans{
+#btnans, button{
     background-color: #878C8F; /* Green */
     border: none;
     color: white;
@@ -49,5 +56,12 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    min-width: 220px;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .btnpos{
+    margin: auto;
+
   }
 
