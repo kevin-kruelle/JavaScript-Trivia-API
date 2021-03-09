@@ -1,0 +1,50 @@
+*{
+        /* background-color: blanchedalmond ; */
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    background-image: url("../mag.png");
+    background-size: cover;
+    background-repeat:repeat;
+    
+  }
+  
+  .bg {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+  }
+
+
+#demo, #answer{
+    color: #fcf7ff;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    background-color: #655560;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+    min-height: 500px;
+}
+
+#btnans{
+    background-color: #878C8F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
