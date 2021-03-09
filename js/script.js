@@ -14,11 +14,19 @@ xhr.open('GET', 'http://jservice.io/api/random', true);
 xhr.send();
 
 
-function question(categories){
-    document.getElementById('demo').innerHTML = categories
+function question(data){
+    document.getElementById('demo').innerHTML = data
 };
 
-function answer(categories){
-    document.getElementById('answer').innerHTML = categories
+function answer(data){
+    document.getElementById('answer').innerHTML = data
 }
 
+function showAnswer(evt) {
+    document.getElementById('answer').style.display = 'block' 
+    console.log(evt);
+}
+
+function refreshPage() {
+    window.location.reload();
+}

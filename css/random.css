@@ -17,6 +17,9 @@ body {
     width: 100%;
   }
 
+  #answer {
+    display: none;
+  }
 
 #demo, #answer{
     color: #fcf7ff;
