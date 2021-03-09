@@ -27,6 +27,8 @@ function showAnswer(evt) {
     console.log(evt);
 }
 
-function refreshPage() {
-    window.location.reload();
+const refreshButton = document.getElementById('nextQuest');
+const refreshPage = () => {
+  location.reload();
 }
+refreshButton.addEventListener('click', refreshPage)
