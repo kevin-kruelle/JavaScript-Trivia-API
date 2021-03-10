@@ -34,19 +34,3 @@ refreshButton.addEventListener('click', callOnData)
 
 callOnData();
 
-// let xhr = new XMLHttpRequest()
-
-// xhr.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         let jsonData = JSON.parse(this.responseText);
-//         category(jsonData[0].category);
-        
-//     }
-// };
-
-// xhr.open('GET', 'http://jservice.io/api/categories', true);
-// xhr.send();
-
-// function category(data) {
-//     document.getElementById('categories').innerHTML += data;
-// } 
