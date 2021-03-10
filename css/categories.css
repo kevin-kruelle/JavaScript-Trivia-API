@@ -1,0 +1,79 @@
+*{
+    /* background-color: blanchedalmond ; */
+}
+
+body {
+/* width: 100vw;
+height: 100vh; */
+background-image: url("../mag.png");
+background-size: cover;
+background-repeat:repeat;
+}
+
+#container {
+background-color: grey;
+height: 100%;
+width: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#answer {
+display: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+}
+
+#category {
+display: none;
+}
+
+#demo, #answer{
+color: #fcf7ff;
+font-size: 1.5em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    margin-top: 100px;
+margin-bottom: 50px;
+min-height: 75px;
+
+}
+
+#container{
+width: 500px;
+margin: auto;
+background-color: #655560;
+border-radius: 8px;
+padding: 20px;
+margin-top: 40px;
+min-height: 500px;
+background-image: url('../rose.png');
+background-position: top;
+background-repeat: no-repeat;
+
+
+}
+
+#btnans, button{
+background-color: #878C8F; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+min-width: 220px;
+border-radius: 7px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nextQuest, #categories {
+margin-top: 10px;
+}
+
+
+.btnpos{
+margin: auto;
+}
