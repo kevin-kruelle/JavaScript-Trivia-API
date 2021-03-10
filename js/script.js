@@ -1,17 +1,19 @@
 console.log('connected...')
+function callOnData() {
+    document.getElementById('answer').style.display = 'none'
+    let xhr = new XMLHttpRequest()
 
-let xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let jsonData = JSON.parse(this.responseText);
+            question(jsonData[0].question);
+            answer(jsonData[0].answer);
+        }
+    };
 
-xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        let jsonData = JSON.parse(this.responseText);
-        question(jsonData[0].question);
-        answer(jsonData[0].answer);
-    }
-};
-
-xhr.open('GET', 'http://jservice.io/api/random', true);
-xhr.send();
+    xhr.open('GET', 'http://jservice.io/api/random', true);
+    xhr.send();
+}
 
 
 function question(data){
@@ -28,7 +30,23 @@ function showAnswer(evt) {
 }
 
 const refreshButton = document.getElementById('nextQuest');
-const refreshPage = () => {
-  location.reload();
-}
-refreshButton.addEventListener('click', refreshPage)
+refreshButton.addEventListener('click', callOnData)
+
+callOnData();
+
+// let xhr = new XMLHttpRequest()
+
+// xhr.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         let jsonData = JSON.parse(this.responseText);
+//         category(jsonData[0].category);
+        
+//     }
+// };
+
+// xhr.open('GET', 'http://jservice.io/api/categories', true);
+// xhr.send();
+
+// function category(data) {
+//     document.getElementById('categories').innerHTML += data;
+// } 
